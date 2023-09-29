@@ -43,15 +43,7 @@ body {
     margin-right: auto;
   }
   #buttonNav {
-    width: auto; /* Ajustar el ancho automáticamente */
-    padding: 10px 20px; /* Reducir el espacio superior e inferior */
-    color: var(--secondary);
-    background: var(--primary);
-    border: none;
-    border-radius: 22px;
-    font-size: 14px;
-    margin-left: auto;
-    margin-right: 16px;
+   display: none;
   }
 
   #changeLanguage {
