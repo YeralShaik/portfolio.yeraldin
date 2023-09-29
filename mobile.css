@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background: #0d0d0d;
+  --primary: #e80665;
+  --secondary: #ffff;
+  --tertiary: #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  background: var(--background);
+}
+
+body {
+  max-width: 800px; /* Limita el ancho del cuerpo */
+  margin: 0 auto; /* Centra el contenido en dispositivos de escritorio */
+  padding: 10px; /* Agrega un espacio alrededor del contenido en dispositivos móviles */
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 800px) {
+  .navBar-container {
+      height: auto; /* Ajustar la altura automáticamente */
+      width: 100%; /* Ancho completo */
+      flex-direction: row; /* Mantener la dirección en fila (horizontal) */
+      justify-content: space-between; /* Espacio entre los elementos */
+      align-items: center; /* Centrar verticalmente */
+  }
+
+  .navlogo {
+      margin-left: 10px; /* Espacio izquierda */
+      margin-right: auto; /* Empujar hacia la izquierda */
+  }
+
+  #buttonNav,
+  #changeLanguage {
+      width: auto; /* Ajustar el ancho automáticamente */
+      margin: 0 10px; /* Espacio horizontal entre los botones */
+  }
+}
+
+
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .main-text {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .main-text h2 {
+    font-size: 20px;
+    font-weight: 200;
+  }
+
+  .main-text h1 {
+    font-size: 24px;
+    color: var(--primary);
+  }
+
+  .main-text .text-occupation {
+    margin-bottom: 36px;
+    font-size: 20px;
+  }
+
+  .main-img {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 0; /* Cambia el margen derecho a 0 para que no haya espacio innecesario */
+  }
+
+  .main-img img {
+    width: auto;
+    height: 270px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+  }
+  .tool-container {
+    max-width: 100%;
+    height: auto;
+    margin: 20px;
+  }
+
+  .tools::before {
+    content: none;
+  }
+
+  .tools {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .tools img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .projects-section {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .project-container {
+    width: auto;
+    margin: 0;
+  }
+
+  .project {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .project img {
+    width: 100%;
+    height: auto;
+  }
+
+  .project h2 {
+    font-size: 24px;
+  }
+
+  .ellipse {
+    width: 150px; /* Reduzca el ancho del ellipse en dispositivos móviles */
+    height: 150px; /* Reduzca la altura del ellipse en dispositivos móviles */
+    background: var(--primary);
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(100px); /* Reduzca el valor de blur para hacerlo menos pronunciado */
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .ellipse-blur {
+    width: 50px; /* Reduzca el ancho del ellipse-blur en dispositivos móviles */
+    height: 70%; /* Reduzca la altura del ellipse-blur en dispositivos móviles */
+    border-radius: 40%;
+    border: 20px solid #e80665;
+    filter: blur(80px); /* Reduzca el valor de blur para hacerlo menos pronunciado */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  #whatsapp-chat {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  footer {
+    height: auto;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  footer::before {
+    content: none;
+  }

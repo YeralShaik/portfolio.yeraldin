@@ -1,0 +1,331 @@
+* {
+  box-sizing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background: #0d0d0d;
+  --primary: #e80665;
+  --secondary: #ffff;
+  --terciary: #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  background: var(--background);
+ 
+}
+
+.navBar-container {
+  height: 80px;
+  width: auto;
+  display: flex;
+  color: var(--secondary);
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+}
+
+.navlogo {
+  background: var(--primary);
+  margin: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+
+}
+.navlogo p {
+  text-align: center;
+  padding-top: 14px;
+  font-size: 18px;
+}
+
+#buttonNav {
+  width: 120px;
+  height: 48px;
+  color: var(--secondary);
+  background: var(--primary);
+  border-style: none;  
+  border-radius: 24px;
+  font-size: 16px;
+  margin-left: 930px;
+}
+#buttonNav:hover {
+background:  #448904;
+color: var(--secondary)
+}
+
+#changeLanguage {
+  width: 70px;
+  height: 25px;
+  margin-right: 8px;
+  font-size: 12px;
+  color: #e80664;
+  background: #f5f5f5;
+  border-radius: 10px;
+}
+#changeLanguage:hover {
+background-color:  #448904;
+color:var(--secondary)
+}
+
+.main-container {
+  width: auto;
+  display: flex;
+ justify-content: space-between;
+ align-items: center;
+  color: var(--secondary);
+  align-items: center;
+  height: 400px;
+}
+
+.main-text {
+  margin: 80px;
+}
+.main-text h2 {
+  font-size: 28px;
+  font-weight: 200;
+}
+
+.main-text h1 {
+  font-size: 40px;
+  color: var(--primary);
+}
+.main-text .text-occupation {
+  margin-bottom: 36px;
+  font-size: 20px;
+}
+.main-text p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.main-img {
+  position: relative;
+  display: inline-block; 
+  margin-top: 40px;
+  margin-right: 100px;
+}
+
+.main-img img {
+  width: auto;
+  height: 350px;
+  border-radius: 50%; 
+  position: relative;
+  z-index: 2;
+
+}
+
+.ellipse {
+  width: 350px;
+  height: 350px;
+  background: var(--primary);
+  border-radius: 50%; 
+  position: absolute;
+  filter: blur(200px);
+  top: 0;
+  left: 0;
+  z-index: 1; 
+}
+
+.ellipse-blur {
+  width: 50px;
+  height: 70%;
+  border-radius: 40%;
+  border: 20px solid #e80665;
+  filter: blur(170px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+
+.tool-container {
+  max-width: 600px;
+  height: 390px; 
+  margin: 56px auto;
+  padding: 0; 
+  position: relative;
+
+
+}
+
+.tool-container h2 {
+  font-size: 32px;
+  text-align: center; 
+  color: var(--secondary);
+  padding-bottom: 24px;
+}
+
+.tools::before {
+  content: "";
+  position: absolute;
+  padding-top: 60px;
+  width: 150px;
+  height: 20%;
+  align-items: center;
+  border-radius: 60%;
+  border: 80px solid #e80665;
+  filter: blur(190px);
+  z-index: -1;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 36px 24px;
+  margin-top: 20px; 
+}
+
+.tools img {
+  width: 100px; 
+  height: 100px; 
+  object-fit: contain; 
+}
+/* Estilos para la sección de proyectos */
+.projects-section {
+padding: 20px;
+text-align: center;
+}
+
+.project-container {
+width: auto;
+margin: 0 auto;
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+}
+
+/* Estilos para cada proyecto individual */
+.project {
+border-radius: 8px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+width: 30%;
+margin-bottom: 20px;
+text-align: center;
+padding: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+object-fit: contain;
+}
+
+/* Estilos para el título del proyecto */
+.project-title {
+font-size: 32px;
+margin-bottom: 10px;
+color: var(--secondary);
+padding-bottom: 24px;
+text-align: center; /* Centra el título */
+}
+
+/* Estilos para la foto de portada del proyecto */
+.project img {
+width: 450px;
+height: 300px;
+border-radius: 10px;
+cursor: pointer;
+transition: border 0.3s ease;
+}
+
+.project img:hover {
+border: 8px solid  #a3ff4d;
+}
+
+/* Estilos para la descripción del proyecto */
+.project h2 {
+font-size: 24px;
+padding: 16px;
+color: var(--secondary);
+margin-bottom: 10px;
+text-align: center; /* Centra la descripción */
+}
+
+.project-links {
+display: flex;
+justify-content: space-between;
+width: 100%;
+}
+
+.github-link,
+.additional-link {
+flex: 1;
+text-decoration: none;
+padding: 10px;
+background-color: var(--primary);
+color: var(--secondary);
+border-radius: 4px;
+margin-top: 10px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.github-link:hover,
+.additional-link:hover {
+background-color: #448904;
+color: var(--secondary);
+}
+
+/* Estilos para la descripción del proyecto */
+.project-description {
+font-size: 16px;
+color: var(--secondary);
+padding-top: 16px;
+margin-bottom: 10px;
+text-align: center; 
+}
+/* Estilos para la descripción del proyecto */
+#whatsapp-chat {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: var(--primary);
+color: #fff;
+padding: 10px 10px;
+border-radius: 50px;
+box-shadow: 0px 0px 8px rgba(163, 163, 163, 0.366);
+text-decoration: none;
+display: flex; /* Add this line */
+justify-content: center;
+align-items: center;
+}
+
+#whatsapp-chat img {
+width: 40px;
+display: block;
+padding: 4px;
+border-radius: 30%;
+
+}
+#whatsapp-chat:hover {
+background-color:  #448904;
+
+}
+
+
+footer {
+  height: 100px;
+}
+.footer {
+  display: flex;
+  width: auto;
+  height: 80px;
+  justify-content: center;
+  align-items: end;
+  gap: 30px;
+  
+
+}
+footer::before {
+  content: "";
+  position: absolute;
+  width: 900px;
+  height: 5%;
+  border-radius: 30%;
+  border: 30px solid #e80665;
+  filter: blur(190px);
+  z-index: -1;
+}
