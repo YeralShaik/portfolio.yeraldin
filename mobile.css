@@ -56,6 +56,7 @@ body {
     flex-direction: column;
     align-items: center;
     height: auto;
+    padding-bottom: 20px;
 
   }
 
@@ -66,14 +67,14 @@ body {
   }
 
   .main-text h2 {
-    font-size: 18px;
-    font-weight: 200;
+    font-size: 16px;
+   padding-bottom: 8px;
   }
 
   .main-text h1 {
     
     font-size: 20px;
-    color: var(--primary);
+    color: var(--primary);  padding-bottom: 8px;
   }
 
   .main-text .text-occupation {
@@ -82,6 +83,7 @@ body {
   }
   .main-text p {
     font-size: 14px;
+    text-align:center;
 
   }
   .main-img {
@@ -94,7 +96,7 @@ body {
 
   .main-img img {
     width: auto;
-    height: 270px;
+    height: 220px;
     border-radius: 50%;
     position: relative;
     z-index: 2;
@@ -103,19 +105,33 @@ body {
   .tool-container {
     max-width: 100%;
     height: auto;
-    margin: 20px;
+    margin-top: 48px;
   }
-
+  .tool-container h2 {
+    font-size: 24px;
+    text-align: center;
+    color: var(--secondary);
+    padding-bottom: 20px;
+  }
   .tools::before {
-    content: none;
+    content: "";
+    position: absolute;
+    padding-top: 60px;
+    width: 150px;
+    height: 20%;
+    align-items: center;
+    border-radius: 60%;
+    border: 80px solid #e80665;
+    filter: blur(190px);
+    z-index: -1;
   }
 
   .tools {
-    flex-direction: row; /* Cambia la dirección de los elementos a fila (horizontal) */
-    flex-wrap: wrap; /* Permite que los íconos se envuelvan en múltiples filas */
-    justify-content: center; /* Centra horizontalmente los íconos */
-    gap: 20px; /* Espacio horizontal entre los íconos */
-    align-items: center; /* Centra verticalmente los íconos */
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px; 
+    align-items: center; 
   }
 
   .tools img {
@@ -125,7 +141,7 @@ body {
   }
 
   .projects-section {
-    padding: 20px;
+    padding-top: 40px;
     text-align: center;
   }
 
@@ -133,39 +149,47 @@ body {
     width: auto;
     margin: 0;
   }
+  .project-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--secondary);
+    padding-bottom: 20px;
+    text-align: center; /* Center the title */
+  }
 
   .project {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
+  
   .project img {
     width: 100%;
     height: auto;
   }
 
   .project h2 {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .ellipse {
-    width: 150px; /* Reduzca el ancho del ellipse en dispositivos móviles */
-    height: 150px; /* Reduzca la altura del ellipse en dispositivos móviles */
+    width: 150px; 
+    height: 150px; 
     background: var(--primary);
     border-radius: 50%;
     position: absolute;
-    filter: blur(100px); /* Reduzca el valor de blur para hacerlo menos pronunciado */
+    filter: blur(100px); 
     top: 0;
     left: 0;
     z-index: 1;
   }
 
   .ellipse-blur {
-    width: 50px; /* Reduzca el ancho del ellipse-blur en dispositivos móviles */
-    height: 70%; /* Reduzca la altura del ellipse-blur en dispositivos móviles */
+    width: 50px; 
+    height: 70%; 
     border-radius: 40%;
     border: 20px solid #e80665;
-    filter: blur(80px); /* Reduzca el valor de blur para hacerlo menos pronunciado */
+    filter: blur(80px); 
     position: absolute;
     top: 0;
     left: 0;
@@ -177,13 +201,21 @@ body {
     right: 10px;
   }
   footer {
-    flex-direction: column; /* Cambia la dirección de los elementos del footer a columna */
-    align-items: center; /* Centra verticalmente los elementos del footer */
-    gap: 10px; /* Espacio vertical entre los elementos del footer */
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px; 
   }
 
-  footer::before {
-    content: none; /* Oculta el elemento de fondo del footer */
+  .footer::before {
+    content: "";
+    position: absolute;
+    padding-top: 60px;
+    width: 20px;
+    align-items: center;
+    border-radius: 60%;
+    border: 80px solid #e80665;
+    filter: blur(90px);
+    z-index: -1;
   }
 }
  
