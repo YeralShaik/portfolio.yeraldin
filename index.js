@@ -8,11 +8,6 @@ const langDataEnglish = {
     text: '🚀 Focused on web design and creating online experiences. My goal is to combine creativity with building functional web applications. I made the decision to steer my career towards Frontend - UI development to combine my passions and create exceptional user experiences. I am always looking for new challenges that allow me to grow and evolve professionally. I value my ability to adapt to change and learn quickly in this constantly evolving world.',
     tooltitle: 'LANGUAGE AND TOOLS',
     projecttitle: 'PROJECTS',
-    messageTitle: 'SEND A MESSAGE',
-    namefrom: 'Name',
-    email: 'Email',
-    messagelabel: 'Message',
-    submitbuttones: 'Send',
     buttonNav:'Contact',
     changeLanguage: 'Spanish',
 };
@@ -25,11 +20,6 @@ const langDataSpanish = {
     text: '🚀 Enfocada en diseño web y la creación de experiencias en línea. Mi objetivo es combinar la creatividad con la construcción de aplicaciones web funcionales. Tomé la decisión de orientar mi carrera hacia el desarrollo Frontend - UI para combinar mis pasiones y crear experiencias de usuario excepcionales. Siempre estoy en busca de nuevos desafíos que me permitan crecer y evolucionar a nivel laboral. Valoro mi habilidad para adaptarme al cambio y aprender rápidamente en este mundo en constante evolución.',
     tooltitle: 'LENGUAJE Y HERRAMIENTAS',
     projecttitle: 'PROYECTO',
-    messageTitle: 'ENVÍA UN MENSAJE',
-    namefrom: 'Nombre',
-    email: 'Correo Electrónico',
-    messagelabel: 'Mensaje',
-    submitbuttones: 'Enviar',
     buttonNav:'Contacto',
     changeLanguage: 'English',
 };
@@ -47,9 +37,7 @@ function updateLanguage() {
     document.getElementById('ocupation').textContent = langData.ocupation;
     document.getElementById('text').textContent = langData.text;
     document.getElementById('tooltitle').textContent = langData.tooltitle;
-    document.getElementById('projecttitle').textContent = langData.projecttitle;
-
-  
+    document.getElementById('project-title').textContent = langData.projecttitle;
 }
 
 document.getElementById('changeLanguage').addEventListener('click', () => {

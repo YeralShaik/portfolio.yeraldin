@@ -4,109 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Page</title>
+    <!-- Inclusion of style sheets -->
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="mobile.css" media="(max-width: 800px)">
 </head>
 <body>
     <header>
+        <!-- Navigation bar -->
         <nav class="navbar">
             <div class="navBar-container">
                 <div class="navlogo">
                     <p>YE</p>
                 </div>
+                <!-- Navigation and language change buttons -->
                 <button id="buttonNav"></button>
                 <button id="changeLanguage"></button>
-
             </div>
         </nav>
     </header>
-        <section class="main-section">
-            <div class="main-container">
-                <div class="main-text">
-               <h2 id="greeting"></h2>
-               <h1 id="name"></h1>
-               <p  id="ocupation" class="text-occupation"></p>
-               <p id="text"></p>
+    <section class="main-section">
+        <!-- Main section, possibly an introduction or presentation -->
+        <div class="main-container">
+            <div class="main-text">
+                <!-- Main text and personal details -->
+                <h2 id="greeting"></h2>
+                <h1 id="name"></h1>
+                <p id="ocupation" class="text-occupation"></p>
+                <p id="text"></p>
             </div>
             <div class="main-img">
-                <img src="./asset/image0.png" alt="fotoperfil">
-                 <div class="ellipse"></div>
-                        <div class="ellipse-blur"></div>
+                <!-- Profile image and decorative elements -->
+                <img src="./asset/image0.png" alt="profilephoto">
+                <div class="ellipse"></div>
+                <div class="ellipse-blur"></div>
             </div>
         </div>
-        </section>
-        <section class="tools-section">
-            <div class="tool-container">
-                <h2 id="tooltitle"></h2>
-                <div class="tools">
-               <img src="./asset/Group.png" alt="photoshop">
-               <img src="./asset/skill-icons_illustrator.png" alt="illustrator">
-               <img src="./asset/logos_adobe-xd.png" alt="">
-               <img src="./asset/logos_figma.png" alt="">
-               <img src="./asset/vscode-icons_file-type-html.png" alt="">
-               <img src="./asset/vscode-icons_file-type-css.png" alt="">
-               <img src="./asset/skill-icons_javascript.png" alt="">
-               <img src="./asset/devicon_react-wordmark.png" alt="">
-               <img src="./asset/mdi_github.png" alt="">
-               <img src="./asset/logos_tailwindcss.png" alt="">
+    </section>
+    <section class="tools-section">
+        <!-- Skills and tools section -->
+        <div class="tool-container">
+            <h2 id="tooltitle"></h2>
+            <div class="tools">
+                <!-- Images of tools and skills -->
+                <img src="./asset/Group.png" alt="photoshop">
+                <img src="./asset/skill-icons_illustrator.png" alt="illustrator">
+                <img src="./asset/logos_adobe-xd.png" alt="">
+                <img src="./asset/logos_figma.png" alt="">
+                <img src="./asset/vscode-icons_file-type-html.png" alt="">
+                <img src="./asset/vscode-icons_file-type-css.png" alt="">
+                <img src="./asset/skill-icons_javascript.png" alt="">
+                <img src="./asset/devicon_react-wordmark.png" alt="">
+                <img src="./asset/mdi_github.png" alt="">
+                <img src="./asset/logos_tailwindcss.png" alt="">
             </div>
-            </div>
-        </section>
-       <!-- Dentro de la sección de proyectos -->
-<section class="projects-section">
-    <h1  class="project-title">PROJECT</h1>
+        </div>
+    </section>
+    <!-- Inside the projects section -->
+    <section class="projects-section">
+        <!-- Title of the projects section -->
+        <h1 class="project-title" id="project-title">PROJECT</h1>
         <div class="project-container">
-    
-        <div class="project">
-            <h2>Shaik Asesores</h2>
-            <img src="./asset/Captura de pantalla 2023-09-18 121752.png" alt="ShaikAsesorespanama">
-            <p class="project-description">
-                Este es un proyecto increíble que hemos desarrollado. 
-                Contiene muchas características emocionantes y logros notables.
-            </p>
-            <a href="https://yeralshaik.github.io/ShaikAsesorespanama/" class="project-link" target="_blank">     
-            </a>
-            <a href="https://github.com/YeralShaik/ShaikAsesorespanama.git" class="github-link" target="_blank">
-                Ver en GitHub
-            </a>
+            <div class="project">
+                <!-- Details of a project, possibly a link to the source code -->
+                <h2>Shaik Asesores</h2>
+                <img src="./asset/Captura de pantalla 2023-09-18 121752.png" alt="ShaikAsesorespanama">
+                
+            </div>
+            <div class="project">
+                <!-- Details of another project, possibly a link to the source code -->
+                <h2 class="project-title">Happy Pets</h2>
+                <img src="https://media.licdn.com/dms/image/sync/D4D27AQGi4VoZWhu5Kg/articleshare-shrink_800/0/1695068216840?e=1696006800&v=beta&t=xYAiXu49r_4JaqAN7jRIbJ2YxYmlqXxmkzEJB87ureY" alt="Project 2 Cover">
+               
+            </div>
         </div>
-        <div class="project">
-            <h2 class="project-title">Happy Pets</h2>
-            <img src="https://media.licdn.com/dms/image/sync/D4D27AQGi4VoZWhu5Kg/articleshare-shrink_800/0/1695068216840?e=1696006800&v=beta&t=xYAiXu49r_4JaqAN7jRIbJ2YxYmlqXxmkzEJB87ureY" alt="Portada del Proyecto 2">
-            <p class="project-description">
-                Este es otro proyecto increíble que hemos desarrollado. 
-                Tiene sus propias características emocionantes y logros notables.
-            </p>
-            <a href="https://www.behance.net/gallery/166860719/Caso-de-estudio-Happy-Pets" class="project-link" target="_blank">
-            </a>
-            <a href="https://github.com/YeralShaik/ShaikAsesorespanama.git" class="github-link" target="_blank">
-                Ver en GitHub
-            </a>
-        </div>
-        
-        </div>
+    </section>
+    <script src="./index.js"></script>
+    <div id="whatsapp-chat">
+        <!-- WhatsApp icon for contact chat -->
+        <a href="https://api.whatsapp.com/send?phone=+1234567890" target="_blank">
+            <img src="./asset/pngwing.com (16).png" alt="WhatsApp Icon">
+        </a>
     </div>
-</section>   
-<script src="./index.js"></script>
+    <footer>
+        <!-- Social media profile links in the footer -->
+        <div class="footer">
+            <a href="https://www.linkedin.com/in/yeraldin-espinosa-716493197/">
+                <img src="./asset/Vector.png" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/yeraldin-espinosa-716493197/">
+                <img src="./asset/logoinstagram.png" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/yeraldin-espinosa-716493197/">
+                <img src="./asset/Vector-1.png" alt="">
+            </a>
+        </div>
+    </footer>
 </body>
-<div id="whatsapp-chat">
-    <a href="https://api.whatsapp.com/send?phone=+1234567890" target="_blank">
-        <img src="./asset/pngwing.com (16).png" alt="WhatsApp Icon">
-        
-    </a>
-</div>
-<footer>
-    <div class="footer">
-    <a href="https://www.linkedin.com/in/yeraldin-espinosa-716493197/">
-        <img src="./asset/Vector.png" alt="">
-    </a>
-    <a href="https://www.linkedin.com/in/yeraldin-espinosa-716493197/">
-        <img src="./asset/logoinstagram.png" alt="">
-    </a>
-    <a href="https://www.linkedin.com/in/yeraldin-espinosa-716493197/">
-        <img src="./asset/Vector-1.png" alt="">
-    </a>
-</div>
-
-</footer>
 </html>

@@ -1,3 +1,4 @@
+/* Establecer el box-sizing en border-box para incluir el borde y el relleno en las medidas */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -25,57 +26,78 @@ body {
 /* Estilos para dispositivos móviles */
 @media (max-width: 800px) {
   .navBar-container {
-      height: auto; /* Ajustar la altura automáticamente */
-      width: 100%; /* Ancho completo */
-      flex-direction: row; /* Mantener la dirección en fila (horizontal) */
-      justify-content: space-between; /* Espacio entre los elementos */
-      align-items: center; /* Centrar verticalmente */
+    height: auto; 
+    width: 100%; /* Ancho completo */
+    padding: 16px ;
+    display: flex;
+    color: var(--secondary);
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Cambiar la sombra según tus preferencias */
+    background-color: var(--background); /* Agregar un fondo al navbar */
   }
+  
 
   .navlogo {
-      margin-left: 10px; /* Espacio izquierda */
-      margin-right: auto; /* Empujar hacia la izquierda */
+    margin-left: 10px; 
+    margin-right: auto;
+  }
+  #buttonNav {
+    width: auto; /* Ajustar el ancho automáticamente */
+    padding: 10px 20px; /* Reducir el espacio superior e inferior */
+    color: var(--secondary);
+    background: var(--primary);
+    border: none;
+    border-radius: 22px;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: 16px;
   }
 
-  #buttonNav,
   #changeLanguage {
-      width: auto; /* Ajustar el ancho automáticamente */
-      margin: 0 10px; /* Espacio horizontal entre los botones */
+    width: 50px; 
+    font-size: 10px;
   }
-}
 
 
   .main-container {
     flex-direction: column;
     align-items: center;
     height: auto;
+
   }
 
   .main-text {
     margin-top: 20px;
     text-align: center;
+    order: 2;
   }
 
   .main-text h2 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 200;
   }
 
   .main-text h1 {
-    font-size: 24px;
+    
+    font-size: 20px;
     color: var(--primary);
   }
 
   .main-text .text-occupation {
-    margin-bottom: 36px;
-    font-size: 20px;
+    margin-bottom: 16px;
+    font-size: 16px; 
   }
+  .main-text p {
+    font-size: 14px;
 
+  }
   .main-img {
     position: relative;
     display: inline-block;
     margin-top: 20px;
-    margin-right: 0; /* Cambia el margen derecho a 0 para que no haya espacio innecesario */
+    margin-right: 0;  
+    order: 1;
   }
 
   .main-img img {
@@ -85,6 +107,7 @@ body {
     position: relative;
     z-index: 2;
   }
+
   .tool-container {
     max-width: 100%;
     height: auto;
@@ -96,14 +119,17 @@ body {
   }
 
   .tools {
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
+    flex-direction: row; /* Cambia la dirección de los elementos a fila (horizontal) */
+    flex-wrap: wrap; /* Permite que los íconos se envuelvan en múltiples filas */
+    justify-content: center; /* Centra horizontalmente los íconos */
+    gap: 20px; /* Espacio horizontal entre los íconos */
+    align-items: center; /* Centra verticalmente los íconos */
   }
 
   .tools img {
     width: 50px;
     height: 50px;
+    margin-bottom: 10px; /* Espacio vertical entre los íconos */
   }
 
   .projects-section {
@@ -158,17 +184,14 @@ body {
     bottom: 10px;
     right: 10px;
   }
-
   footer {
-    height: auto;
-  }
-
-  .footer {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    flex-direction: column; /* Cambia la dirección de los elementos del footer a columna */
+    align-items: center; /* Centra verticalmente los elementos del footer */
+    gap: 10px; /* Espacio vertical entre los elementos del footer */
   }
 
   footer::before {
-    content: none;
+    content: none; /* Oculta el elemento de fondo del footer */
   }
+}
+ 
