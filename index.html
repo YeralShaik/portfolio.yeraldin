@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Page</title>
+    <title>Portfolio | Yeraldin Espinosa</title>
     <!-- Inclusion of style sheets -->
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="mobile.css" media="(max-width: 800px)">
@@ -11,15 +11,12 @@
 <body>
     <header>
         <!-- Navigation bar -->
-        <nav class="navbar">
-            <div class="navBar-container">
+            <nav class="navBar-container">
                 <div class="navlogo">
-                    <p>YE</p>
+                    <p>Y</p>
                 </div>
-                <!-- Navigation and language change buttons -->
-                <button id="buttonNav"></button>
                 <button id="changeLanguage"></button>
-            </div>
+            </nav>
         </nav>
     </header>
     <section class="main-section">
@@ -27,11 +24,11 @@
         <div class="main-container">
             <div class="main-text">
                 <!-- Main text and personal details -->
-                <h2 id="greeting"></h2>
+                <h2 id="greeting">hola</h2>
                 <h1 id="name"></h1>
                 <p id="ocupation" class="text-occupation"></p>
-                <p id="text"></p>
             </div>
+
             <div class="main-img">
                 <!-- Profile image and decorative elements -->
                 <img src="./asset/image0.png" alt="profilephoto">
@@ -39,10 +36,21 @@
                 <div class="ellipse-blur"></div>
             </div>
         </div>
-    </section>
-    <section class="tools-section">
+    </section> 
+        <section class="AboutMe-Section">
+        <h2 class="aboutMe-Title">SOBRE MI </h2>
+        <div class="aboutMe-container">
+            <p id="text">texto </p>
+            <a class="aboutMe-CV " href="./asset/Yeraldin Espinosa -CV.pdf" download="Yeraldin_Espinosa-CV.pdf">
+               
+                <span> Resume CV</span>
+            </a>
+        </div>
+    </section> 
+
+
         <!-- Skills and tools section -->
-        <div class="tool-container">
+        <section class="tool-section">
             <h2 id="tooltitle"></h2>
             <div class="tools">
                 <!-- Images of tools and skills -->
@@ -57,7 +65,6 @@
                 <img src="./asset/mdi_github.png" alt="">
                 <img src="./asset/logos_tailwindcss.png" alt="">
             </div>
-        </div>
     </section>
     <!-- Inside the projects section -->
     <section class="projects-section">
@@ -66,10 +73,11 @@
         <div class="project-container">
             <div class="project">
                 <!-- Details of a project, possibly a link to the source code -->
-                <h2>SHAIK ASESORES </h2>
+                <h2>Web para Shaik Asesores  </h2>
+                <p>Este es </p>
                 <a href="https://yeralshaik.github.io/ShaikAsesorespanama/">  
                     <img src="./asset/Captura de pantalla 2023-09-18 121752.png" alt="ShaikAsesorespanama"></a>
-                    <a class="github-link"  href="https://github.com/YeralShaik/ShaikAsesorespanama.git">See Code</a>   
+                    <a class="github-link"  href="https://github.com/YeralShaik/ShaikAsesorespanama.git">Ver GitHub</a>   
             </div>
             <div class="project">
                 <!-- Details of another project, possibly a link to the source code -->
@@ -81,7 +89,7 @@
             </div>
         </div>
     </section>
-    <script src="./index.js"></script>
+
     <div id="whatsapp-chat">
         <!-- WhatsApp icon for contact chat -->
         <a href="https://api.whatsapp.com/send?phone=+1234567890" target="_blank">
@@ -102,5 +110,6 @@
             </a>
         </div>
     </footer>
+    <script src="./index.js"></script>
 </body>
 </html>

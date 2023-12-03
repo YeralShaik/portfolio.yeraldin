@@ -1,5 +1,3 @@
-/* Resetting some default styles */
-/* Set box-sizing to include border and padding in measurements */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,15 +18,15 @@ html {
   background: var(--background);
 }
 
-/* Styles for the navigation bar */
 .navBar-container {
-  height: 80px;
-  width: 100%; 
+  width:  100%;
   display: flex;
+  padding: 0 16px; 
   color: var(--secondary);
   justify-content: space-between;
+  margin-top: 26px;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+
 }
 
 /* Styles for the logo in the navigation bar */
@@ -45,25 +43,7 @@ html {
 
 .navlogo p {
   text-align: center;
-  font-size: 18px;
-}
-
-/* Styles for the "buttonNav" button */
-#buttonNav {
-  width: 120px;
-  height: 48px;
-  color: var(--secondary);
-  background: var(--primary);
-  border: none; 
-  border-radius: 24px;
-  font-size: 16px;
-  margin-left: auto;
-  margin-right: 32px; 
-}
-
-#buttonNav:hover {
-  background: #448904;
-  color: var(--secondary);
+  font-size: 24px;
 }
 
 /* Styles for the "changeLanguage" button */
@@ -83,38 +63,64 @@ html {
 }
 
 /* Styles for the main container */
+
 .main-container {
-  width: 100%; 
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: var(--secondary);
-  height: 400px;
+  margin-top: 40px;
+  height: 100px;
 }
 
 /* Styles for the main text */
 .main-text {
   margin: 0 80px; 
+  width: 80%;
+  padding-top: 50px;
 }
 
 .main-text h2 {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 200;
+  margin-bottom: 8px;
 }
 
 .main-text h1 {
-  font-size: 40px;
+  font-size: 36px;
   color: var(--primary);
 }
 
+
+
+/* Estilos para el texto de ocupación con animación de escritura */
 .main-text .text-occupation {
   margin-bottom: 36px;
+  margin-top: 12px;
   font-size: 20px;
 }
 
-.main-text p {
-  font-size: 16px;
-  line-height: 24px;
+
+
+
+.main-text
+.text-occupation
+{
+  overflow: hidden; 
+  white-space: nowrap; 
+  border-right: 3px solid white;
+  animation: slide 4s ease-in-out infinite;
+}
+
+/* Definir la animación llamada "typing" */
+@keyframes slide {
+  from {
+    width: 0;
+  }
+  to {
+    width: 65%;
+  }
 }
 
 /* Styles for the main image container */
@@ -122,57 +128,77 @@ html {
   position: relative;
   display: inline-block;
   margin-top: 40px;
-  margin-right: 100px;
+  margin-right: 20px  
+
 }
 
 .main-img img {
-  width: auto;
-  height: 350px;
-  border-radius: 50%;
+  width: 250px;
+  height: auto;
+  border-radius: 60%;
   position: relative;
   z-index: 2;
+
 }
 
-/* Styles for decorative ellipses */
-.ellipse {
-  width: 350px;
-  height: 350px;
-  background: var(--primary);
-  border-radius: 50%;
-  position: absolute;
-  filter: blur(200px);
-  top: 0;
-  left: 0;
-  z-index: 1;
+.AboutMe-Section {
+  height: 125px;
+  margin-top: 125px;
+  padding:  0 80px;
+  color: white;
 }
 
-.ellipse-blur {
-  width: 50px;
-  height: 70%;
-  border-radius: 40%;
-  border: 20px solid #e80665;
-  filter: blur(170px);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
+.aboutMe-container {
+width: 100%;
+height: 100px;
+}
+
+.aboutMe-Title {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: var(--primary);
+}
+
+.aboutMe-CV {
+  align-items: baseline;
+  display: flex;
+}
+
+.aboutMe-CV  span{
+  background: #e80664;
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+ border-radius: 16px;
+ margin-top: 24px;
+ text-
+}
+
+.aboutMe-CV span:hover {
+  background: #448904
+}
+
+.aboutMe-container p {
+  font-size: 18px;
+  font-weight: 100;
 }
 
 /* Styles for the tool container */
-.tool-container {
-  max-width: 600px;
-  height: 390px;
-  margin: 56px auto;
-  padding: 0;
-  position: relative;
+.tool-section {
+  padding-top: 56px;
+  margin-top: 300px;
+  margin: 50px;
+  height: 500px;
+
 }
 
+
 /* Styles for the tool section title */
-.tool-container h2 {
+.tool-section h2 {
   font-size: 32px;
   text-align: center;
   color: var(--secondary);
-  padding-bottom: 24px;
+  margin:48px;
 }
 
 /* Styles for the tool images and border effect */
@@ -190,27 +216,40 @@ html {
 }
 
 .tools {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 36px 24px;
-  margin-top: 20px;
+
+  height: 100px;
+  padding-top: 56px;
+  margin: 48px;
+  justify-content: center; 
+  align-items: center; 
+  display: grid;
+  grid-template-rows: repeat (2,1fr);
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 40px 24px;
+
 }
 
 .tools img {
+  background: #3e3c3c2d;
+  padding: 8px;
   width: 100px;
   height: 100px;
+  border-radius: 12px;
   object-fit: contain;
+
+
+
 }
 
 /* Styles for the projects section */
 .projects-section {
+  margin: 8px;
   padding: 20px;
   text-align: center;
 }
 
 .project-container {
-  width: auto;
+
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
@@ -242,7 +281,7 @@ html {
 
 /* Styles for project cover images */
 .project img {
-  width: 450px;
+  width: 250px;
   height: 300px;
   border-radius: 10px;
   cursor: pointer;
@@ -331,7 +370,6 @@ footer {
 
 .footer {
   display: flex;
-  width: auto;
   height: 90px;
   justify-content: center;
   align-items: end;
@@ -347,4 +385,41 @@ footer::before {
   border: 30px solid #e80665;
   filter: blur(190px);
   z-index: -1;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  body {
+    max-width: 900px;
+    margin: 60px auto; /* Centrar el contenido */
+    padding: 70px;
+  }
+/* Styles for the navigation bar */
+
+header {
+  max-width: 900px;
+  margin: 0 auto; /* Centrar el contenido */
+}
+
+
+.main-section,
+  .AboutMe-Section,
+  .tool-section,
+  .projects-section {
+    max-width: 900px;
+    margin: 70px auto; /* Centrar el contenido */
+  }
+
+  .tools,
+  .project-container {
+    justify-content: space-evenly;
+  }
+
+  .project {
+    width: 48%; /* Reducir el ancho para encajar dos en una fila */
+  }
+
+  .footer::before {
+    width: 100%; /* Ajuste para ocupar el ancho completo */
+  }
 }
