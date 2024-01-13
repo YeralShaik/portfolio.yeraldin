@@ -80,13 +80,13 @@ html {
 }
 
 .main-text h2 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 200;
   margin-bottom: 8px;
 }
 
 .main-text h1 {
-  font-size: 36px;
+  font-size: 24px;
   color: var(--primary);
 }
 
@@ -94,7 +94,7 @@ html {
 .main-text .text-occupation {
   margin-bottom: 36px;
   margin-top: 12px;
-  font-size: 20px;
+  font-size: 18px;
   overflow: hidden;
   white-space: nowrap;
   border-right: 3px solid white;
@@ -140,7 +140,7 @@ html {
 }
 
 .aboutMe-Title {
-  font-size: 28px;
+  font-size: 24px;
   margin-bottom: 16px;
   color: var(--primary);
 }
@@ -164,7 +164,7 @@ html {
 }
 
 .aboutMe-container p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 100;
 }
 
@@ -178,7 +178,7 @@ html {
 
 /* Styles for the tool section title */
 .tool-section h2 {
-  font-size: 32px;
+  font-size: 24px;
   text-align: center;
   color: var(--secondary);
   margin: 48px;
@@ -255,7 +255,7 @@ html {
 
 /* Styles for the project title */
 .project-title {
-  font-size: 32px;
+  font-size: 24px;
   margin-bottom: 10px;
   color: var(--secondary);
   padding-bottom: 24px;
@@ -276,7 +276,7 @@ html {
 
 /* Styles for the project description */
 .project p {
-  font-size: 18px;
+  font-size: 16px;
   padding: 16px;
   color: var(--secondary);
   margin-bottom: 10px;
@@ -307,7 +307,7 @@ html {
 
 /* Styles for the project description */
 #project-description {
-  font-size: 18px;
+  font-size: 16px;
   color: var(--terciary);
   font-weight: 200;
 }
