@@ -7,7 +7,8 @@
     <!-- Inclusion of style sheets -->
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./mobile.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
 </head>
 <body>
     <header>
@@ -21,34 +22,51 @@
         </nav>
     </header>
     <section class="main-section">
-        <!-- Main section, possibly an introduction or presentation -->
-        <div class="main-container">
-            <div class="main-text">
-                <!-- Main text and personal details -->
-                <h2 id="greeting">hola</h2>
-                <h1 id="name"></h1>
-                <p id="ocupation" class="text-occupation"></p>
-            </div>
-
+        <article class="main-Container">
             <div class="main-img">
                 <!-- Profile image and decorative elements -->
                 <img src="./asset/image0.png" alt="profilephoto">
-                <div class="ellipse"></div>
-                <div class="ellipse-blur"></div>
+                
             </div>
-        </div>
+         
+                <div class="main-text">
+                    <!-- Main text and personal details -->
+                    <h2 id="greeting">hola</h2>
+                    <h1 id="name"></h1>
+                    <p id="ocupation" class="text-occupation"></p>
+                    <div class="social-Media">
+                        <p class="linkedin-button">
+                            <a href="https://www.linkedin.com/in/yeraldin-espinosa-716493197/">
+                                <img src="./asset/Vector.png" alt="linkedin">
+                            </a>
+                            Linkedin</p> 
+                        <p class="github-button">
+                        <a href="https://github.com/YeralShaik">
+                            <i class="fa-brands fa-square-github"></i>
+                        </a> 
+                         GitHub
+                        </p>
+                        <p class="mail-button">
+                            <a href="">
+                                <img src="" alt="mail">
+                            </a>
+                            yeraldinshaik@gmail.com
+                        </p>
+                    </div>
+                  
+                    
+                </div>
+        </article>
+       
     </section> 
         <section class="AboutMe-Section">
-        <h2 class="aboutMe-Title">SOBRE MI </h2>
-        <div class="aboutMe-container">
+        <h2 class="aboutMe-Title">SOBRE MI</h2>
+        
             <p id="text">texto </p>
-            <a class="aboutMe-CV " href="./asset/Yeraldin Espinosa -CV.pdf" download="Yeraldin_Espinosa-CV.pdf">
-               
-                <span> Resume CV</span>
+            <a class="aboutMe-CV " href="./asset/Yeraldin Espinosa -CV.pdf" download="Yeraldin_Espinosa-CV.pdf">  
+            <span> Resume CV</span>
             </a>
-        </div>
     </section> 
-
 
         <!-- Skills and tools section -->
         <section class="tool-section">
@@ -156,15 +174,7 @@
     <footer>
         <!-- Social media profile links in the footer -->
         <div class="footer">
-            <a href="https://www.linkedin.com/in/yeraldin-espinosa-716493197/">
-                <img src="./asset/Vector.png" alt="linkedin">
-            </a>
-            <a href="https://www.linkedin.com/in/yeraldin-espinosa-716493197/">
-                <img src="./asset/logoinstagram.png" alt="instagram">
-            </a>
-            <a href="https://github.com/YeralShaik">
-                <img src="./asset/Vector-1.png" alt="GitHub">
-            </a>
+            
         </div>
     </footer>
     <script src="./index.js"></script>
