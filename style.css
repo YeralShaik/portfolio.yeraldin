@@ -8,7 +8,7 @@
 :root {
   --background: #1c1c1d;
   --primary: #f52cf9;
-  --secondary: #ffff;
+  --secondary: #f7fa68;
   --terciary: #f5f5f5;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -27,20 +27,21 @@ body {
 .navBar-container {
   width: auto;
   height: 100px;
-  padding: 40px 80px 40px 80px;
+  padding: 40px 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: solid #e7e7e718;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+}
+.nav-title {
+  color: var(--primary);
+  font-size: 24px;
 }
 
 /* Styles for the logo in the navigation bar */
 .navlogo {
-  background: var(--primary);
+
   margin: 0 32px;
-  width: 50px;
+
   height: 50px;
   border-radius: 50%;
   display: flex;
@@ -48,17 +49,14 @@ body {
   justify-content: center;
 }
 
-.navlogo p {
-  text-align: center;
-  font-size: 24px;
-}
+
 
 /* Styles for the "changeLanguage" button */
 #changeLanguage {
   width: 70px;
   height: 25px;
   margin-right: 8px;
-  font-size: 12px;
+  font-size: 16px;
   color: var(--primary);
   background: #f5f5f5;
   border-radius: 10px;
@@ -84,7 +82,7 @@ body {
   align-items: center;
 
   text-align: left;
-  color: var(--secondary);
+  color: var(--terciary);
 
 }
 /* Styles for the main text */
@@ -139,46 +137,55 @@ body {
 
 .linkedin-button,
 .github-button {
-  background: var(--primary);
-  padding: 6px;
-  width: 120px;
-  border-radius: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  
+  text-align: center;
+  margin-top: 12px;
+  padding:6px;
+  font-size: 16px;
+  border: solid 2px #f52cf9;
+  box-shadow: 0 0 2px #f52cf9;
+  color: #f52cf9;
+  border-radius: 12px;
+  cursor: pointer;
+} 
+.linkedin-button:hover,
+.github-button:hover,
+.mail-button:hover {
+  background: #f870fa;
+  color: var(--terciary);
+  box-shadow: 0 0 8px #f52cf9;
 }
-.linkedin-button img {
-  width: 20px;
-  margin-right: 6px;
+.bi-linkedin,
+.bi-github,
+.bi-envelope-fill {
+  color: #f5f5f5;
+  margin: 6px;
 }
 
+
 .mail-button {
-  background: var(--primary);
-  padding: 6px;
-  width: 250px;
-  border-radius: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
+  text-align: center;
+
+  margin-top: 12px;
+  padding:6px;
+  font-size: 16px;
+  border: solid 2px #f52cf9;
+  box-shadow: 0 0 2px #f52cf9;
+  color: #f52cf9;
+  border-radius: 12px;
+  cursor: pointer;
 }
+
+
 .AboutMe-Section {
-  height: 125px;
+  height: 300px;
   width: auto;
   color: white;
   text-align: left;
   display: flex;
   flex-direction: column;
-  padding: 40px 200px 40px 200px;
+  padding: 40px 250px;
 }
 
-.aboutMe-container {
-  width: auto;
-  height: 100px;
-  padding: 80px 180px 40px 180px;
-}
 
 .aboutMe-Title {
   font-size: 24px;
@@ -186,9 +193,14 @@ body {
   color: var(--primary);
 }
 
+#text {
+  font-size: 18px;
+}
+
 .aboutMe-CV {
   align-items: baseline;
   display: flex;
+
 }
 
 .aboutMe-CV span {
@@ -201,8 +213,11 @@ body {
 }
 
 .aboutMe-CV span:hover {
-  background: #448904;
+  background: #f7fa68;
+  color: var(--primary);
+  box-shadow: 0 0 10px #f52cf9;
 }
+
 
 
 
@@ -247,98 +262,108 @@ body {
 }
 
 /* Styles for the projects section */
-.projects-section {
-  margin: 8px;
-  padding: 20px;
+.project-Section {
+  width: auto;
+  height: auto;
+  padding: 40px 200px;
+  display: flex;
+  flex-direction: column;
+ 
+
+}
+.projects-Container {
+  padding: 24px 100px;
+  display: flex; /* Permite organizar proyectos en formato flex */
+  flex-direction: column; /* Mantener proyectos en una columna */
+  gap: 24px; /* Espacio entre proyectos */
+}
+
+
+.project-Title {
+
+    width: 100%;
+    padding-left: 80PX;
+    text-align: left;
+    color: #f52cf9; 
+    text-shadow: 0 0 8px #ffffff48; 
+    font-size: 32px;
+
+  }
+
+  .project-Card {
+    display: flex; /* Utilizar flex para alinear elementos */
+    flex-direction: row; /* Alineación horizontal de elementos */
+    padding: 16px; /* Espaciado interno */
+   
+   
+  }
+
+.project-Img img  {
+  transform: translateY(0px) scale(1);
+  transition: transform 0.5s ease-in-out;
+
+}
+.project-Img img {
+  width: 350px; /* Ancho de la imagen del proyecto */
+  height: 300px; /* Alto de la imagen */
+  border-radius: 10px; /* Bordes redondeados */
+  margin-right: 24px; /* Espacio entre imagen y contenido */
+}
+
+
+  .project-Img img:hover{
+
+    transform: translateY(-15px) scale(1);
+    transition: transform 0.3s ease-in-out;
+   
+   
+  }
+  .project-Content {
+    display: flex;
+    flex-direction: column; /* Alineación vertical de contenido */
+    justify-content: flex-start; /* Alineación en la parte superior */
+  }
+  /* Styles for the project description */
+  .project-Name {
+    font-size: 24px;
+    padding-bottom: 12px;
+    color: var(--terciary);
+  }
+
+.project-Description{
+  color: var(--terciary);
+  font-size: 20px;
+  margin-top: 20px;
+}
+.links-Container {
+  padding-top: 30px ;
   
 }
 
-.project-container {
-  background-color: #48484b;
-  color: var(--secondary);
-  border-radius: 20px;
-  margin: 0 auto;
-  padding: 20px;
-  gap: 16px;
-}
-
-/* Styles for individual project cards */
-.project {
-  color: var(--secondary);
-  border-radius: 8px;
-  margin-bottom: 20px;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  justify-content: center;
-}
-
-#tools-list {
-  list-style: none;
-  display: flex;
-  gap: 10px;
-  font-style: italic;
-  color: rgba(255, 255, 255, 0.324);
-  margin: 8px;
-}
-
-/* Styles for the project title */
-.project-title {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: var(--secondary);
-  padding-bottom: 24px;
-}
-
-/* Styles for project cover images */
-.project-img {
-  width: 340px;
-  height: auto;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: border 0.3s ease;
-}
-
-.project-img:hover {
-  border: 8px solid #a3ff4d;
-}
-
-/* Styles for the project description */
-.project p {
-  font-size: 16px;
-  padding: 16px;
-  color: var(--secondary);
-  margin-bottom: 10px;
-}
-
-/* Styles for project links */
 .github-link,
-.additional-link {
-  width: 150px;
-  height: 48px;
+.link {
+  width: 100px;
+  height: auto;
   text-align: center;
-  flex: 1;
   text-decoration: none;
-  padding: 16px;
-  background-color: var(--primary);
-  color: var(--secondary);
-  border-radius: 4px;
+  margin-top: 16px;
+  padding:8px;
+  font-size: 16px;
+  border: solid 2px #f52cf9;
+  box-shadow: 0 0 2px #f52cf9;
+  color: #f52cf9;
+  border-radius: 12px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-left: 80%;
+  gap: 16px;
+  margin: 8px;
+ 
 }
+
 
 .github-link:hover,
-.additional-link:hover {
-  background-color: #448904;
-  color: var(--secondary);
-}
-
-/* Styles for the project description */
-#project-description {
-  font-size: 16px;
-  color: var(--terciary);
-  font-weight: 200;
+.link:hover {
+  background-color: #f52cf9;
+  color: #fff;
 }
 
 /* Styles for the WhatsApp chat button */
