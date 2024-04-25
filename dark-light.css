@@ -1,0 +1,41 @@
+
+
+/* Variables para modo claro y oscuro */
+:root {
+  --background-dark: #1c1c1d;
+  --primary-dark: #f52cf9;
+  --secondary-dark: #f7fa68;
+
+  --background-light: #fef3ff;
+  --primary-light: #53004f;
+  --secondary-light: #b813b5;
+  
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Modo oscuro por defecto */
+body.dark-mode {
+  background: var(--background-dark);
+  color: var(--primary-dark);
+}
+
+/* Modo claro */
+body.light-mode {
+  background: var(--background-light);
+  color: var(--primary-light);
+}
+
+/* Clase para ocultar elementos */
+.hidden {
+  display: none;
+}
+
+/* Iconos para cambiar modo */
+.bi-moon-fill {
+  color: var(--primary-dark);
+}
+
+.bi-brightness-high-fill {
+  color: var(--secondary-light);
+}
+

@@ -1,13 +1,16 @@
+
+
 document.addEventListener('DOMContentLoaded', function () {
+  
   const langDataEnglish = {
     greeting: '',
     name: '¡Hello! I\'m Yeraldin Espinosa',
     ocupation: 'FrontEnd Developer / UI Designer',
     location: '📍Panamá, Panamá City',
     aboutme: 'About me',
-    text: '🚀 Focused on web design and creating online experiences. My goal is to combine creativity with building functional web applications. I made the decision to steer my career towards Frontend - UI development to combine my passions and create exceptional user experiences.',
+    text: 'With a solid background in sales, I decided to pivot my career and dive into the fascinating world of web development, with a special focus on Frontend. I am a self-taught individual with a strong capacity for learning and adapting to new environments. I have a passion for researching, experimenting, and applying my knowledge to achieve my goals. I have developed various personal projects that have allowed me to practice my skills and explore new web development techniques. I consider myself a curious person with a great appetite for knowledge. I am always seeking new opportunities to learn and improve my skills.',
     tooltitle: 'Skills',
-    projecttitle: 'Porjects',
+    projecttitle: 'Projects',
     projectDescription1: 'This project involves the creation of a Landing Page for Shaik Asesores, a Panamanian company dedicated to providing advice on personal loans.',
     projectDescription2: 'MovieStream is a web application that allows you to discover and explore movies from various categories.',
     projectDescription3: "Gif App is a simple app to search and display gifs using the Giphy API.",
@@ -23,11 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
     aboutme: 'Sobre mí',
     text: 'Con una sólida experiencia en el mundo de las ventas, decidí dar un giro a mi carrera y sumergirme en el fascinante universo del desarrollo web, enfocándome especialmente en el Frontend.\nSoy una persona autodidacta, con gran capacidad de aprendizaje y adaptación a nuevos entornos.\nMe apasiona investigar, experimentar y poner en práctica mis conocimientos para alcanzar mis objetivos.\nHe desarrollado diversos proyectos personales que me han permitido poner en práctica mis habilidades y explorar nuevas técnicas de desarrollo web.\nMe considero una persona curiosa y con un gran apetito por el conocimiento. Siempre estoy buscando nuevas oportunidades para aprender y mejorar mis habilidades.',
     tooltitle: 'Skills',
-    projecttitle: 'Poryectos',
-    projectDescription1: 'Este proyecto consiste en la creación de una Landing Page para Shaik Asesores, una empresa panameña dedicada a préstamos personales.',
-    projectDescription2: 'MovieStream es una aplicación web que te permite descubrir y explorar películas de diversas categorías.',
-    projectDescription3: "Gif App es una aplicación simple para buscar y mostrar gifs usando la API de Giphy.",
-    projectDescription4: 'El desafío de este proyecto fue diseñar una aplicación que abordara las necesidades de quienes buscan adoptar o reencontrar mascotas.',
+    projecttitle: 'Proyectos',
     changeLanguage: 'English'
   }
 
@@ -43,8 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('location').textContent = langData.location
     document.getElementById('text').textContent = langData.text
     document.getElementById('tooltitle').textContent = langData.tooltitle
-    document.querySelector('.project-Title').textContent = langData.projecttitle
-    document.querySelector('.project-description').textContent = langData.projectDescription1
+   
    
   }
 
@@ -81,6 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   updateLanguage()
 })
+
 
 const projectsData = [
   {
@@ -146,6 +145,7 @@ function fillProjectsContainer() {
     projectCard.appendChild(projectContent)
     projectsContainer.appendChild(projectCard)
   })
+ 
 }
 
 document.addEventListener('DOMContentLoaded', fillProjectsContainer)
