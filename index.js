@@ -4,9 +4,10 @@ document.addEventListener('DOMContentLoaded', function () {
     name: '¡Hello! I\'m Yeraldin Espinosa',
     ocupation: 'FrontEnd Developer / UI Designer',
     location: '📍Panamá, Panamá City',
+    aboutme: 'About me',
     text: '🚀 Focused on web design and creating online experiences. My goal is to combine creativity with building functional web applications. I made the decision to steer my career towards Frontend - UI development to combine my passions and create exceptional user experiences.',
     tooltitle: 'Skills',
-    projecttitle: 'Portfolio',
+    projecttitle: 'Porjects',
     projectDescription1: 'This project involves the creation of a Landing Page for Shaik Asesores, a Panamanian company dedicated to providing advice on personal loans.',
     projectDescription2: 'MovieStream is a web application that allows you to discover and explore movies from various categories.',
     projectDescription3: "Gif App is a simple app to search and display gifs using the Giphy API.",
@@ -19,9 +20,10 @@ document.addEventListener('DOMContentLoaded', function () {
     name: '¡Hola! Soy Yeraldin Espinosa',
     ocupation: '💻 Desarrolladora FrontEnd / Diseñadora UI',
     location: '📍Panamá, Ciudad de Panamá',
-    text: 'Enfocada en diseño web y la creación de experiencias en línea. Mi objetivo es combinar la creatividad con la construcción de aplicaciones web funcionales.',
+    aboutme: 'Sobre mí',
+    text: 'Con una sólida experiencia en el mundo de las ventas, decidí dar un giro a mi carrera y sumergirme en el fascinante universo del desarrollo web, enfocándome especialmente en el Frontend.\nSoy una persona autodidacta, con gran capacidad de aprendizaje y adaptación a nuevos entornos.\nMe apasiona investigar, experimentar y poner en práctica mis conocimientos para alcanzar mis objetivos.\nHe desarrollado diversos proyectos personales que me han permitido poner en práctica mis habilidades y explorar nuevas técnicas de desarrollo web.\nMe considero una persona curiosa y con un gran apetito por el conocimiento. Siempre estoy buscando nuevas oportunidades para aprender y mejorar mis habilidades.',
     tooltitle: 'Skills',
-    projecttitle: 'Portafolio',
+    projecttitle: 'Poryectos',
     projectDescription1: 'Este proyecto consiste en la creación de una Landing Page para Shaik Asesores, una empresa panameña dedicada a préstamos personales.',
     projectDescription2: 'MovieStream es una aplicación web que te permite descubrir y explorar películas de diversas categorías.',
     projectDescription3: "Gif App es una aplicación simple para buscar y mostrar gifs usando la API de Giphy.",
@@ -37,11 +39,13 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('greeting').textContent = langData.greeting
     document.getElementById('name').textContent = langData.name
     document.getElementById('ocupation').textContent = langData.ocupation
+    document.querySelector('.aboutMe-Title').textContent = langData.aboutme
     document.getElementById('location').textContent = langData.location
     document.getElementById('text').textContent = langData.text
     document.getElementById('tooltitle').textContent = langData.tooltitle
-    document.getElementById('project-title').textContent = langData.projecttitle
+    document.querySelector('.project-Title').textContent = langData.projecttitle
     document.querySelector('.project-description').textContent = langData.projectDescription1
+   
   }
 
   document.getElementById('changeLanguage').addEventListener('click', () => {
