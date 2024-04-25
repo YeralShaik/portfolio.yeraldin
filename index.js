@@ -89,7 +89,7 @@ const projectsData = [
   {
     title: 'Página Web Shaik Asesores',
     link: 'https://shaikasesores.com',
-    imgSrc: './asset/screencapture-shaikasesores-2024-04-24-15_55_38.png',
+    imgSrc: './asset/screencapture-shaikasesores-2024-04-24-15_55_38 (1).png',
     description: 'Página para una empresa panameña dedicada a la asesoria de préstamos personales, creada desde cero con Figma, HTML, CSS, React.',
     githubLink: 'https://github.com/YeralShaik/Shaik-Asesores'
   }
