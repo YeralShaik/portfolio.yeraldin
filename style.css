@@ -24,47 +24,36 @@ body {
  margin: 0;
  padding: 0;
 }
+
 .navBar-container {
   width: auto;
-  height: 100px;
-  padding: 40px 200px;
+  height: auto;
+  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom:  solid 1px #f52cf93b;
 }
-.nav-title {
-  color: var(--primary);
-  font-size: 24px;
+.navlogo img {
+  width: 50px;
 }
-
-/* Styles for the logo in the navigation bar */
-.navlogo {
-
-  margin: 0 32px;
-
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
 
 /* Styles for the "changeLanguage" button */
 #changeLanguage {
-  width: 70px;
-  height: 25px;
+ 
   margin-right: 8px;
   font-size: 16px;
-  color: var(--primary);
-  background: #f5f5f5;
+  padding: 10px;
+  background: var(--primary);
+  color: var(--secondary);
+
   border-radius: 10px;
 }
 
 #changeLanguage:hover {
-  background-color: #448904;
-  color: var(--secondary);
+  background: #f870fa;
+  color: var(--terciary);
+  box-shadow: 0 0 8px #f52cf9;
 }
 
 /* Styles for the main container */
@@ -72,67 +61,73 @@ body {
   width: auto;
   height: auto;
   display: flex;
-  padding: 40px 200px;
+  padding: 40px;
   align-items: center;
+  justify-content: center;
 }
 .main-Container{
   width: auto;
   height: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
-
-  text-align: left;
+  text-align: center;
   color: var(--terciary);
 
 }
 /* Styles for the main text */
-
-
-.main-text h2 {
-  font-size: 20px;
-  font-weight: 200;
-  margin-bottom: 8px;
+#greeting {
+  font-size: 32px;
+  margin: 24px 0 14px;
 }
-
-.main-text h1 {
-  font-size: 24px;
+#name {
+  font-size: 32px;
   color: var(--primary);
+  padding-bottom: 12px;
 }
+#ocupation {
+  font-size: 24px;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+#location {
+  font-size: 14px;
+  font-weight: 100;
+
+}
+
 
 .main-text{
   width: auto;
-  margin-right: 20px; 
+  padding: 0;
+
   }
 
 
 /* Styles for the main image container */
 .main-img {
- 
   width: auto;
  display: flex;
- padding: 20px;
- margin-left: 40px;
-
-  
+ align-items: center;
+ 
 }
 
 .main-img img {
   background-color: #1c1c1d;
   border: solid #f52cf9;
   box-shadow: 0 0 24px #f52cf9;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  
   object-fit: cover;
 
 }
 
 .social-Media{
-  padding-top: 24px ;
+  padding-top: 24px;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .linkedin-button,
@@ -140,7 +135,7 @@ body {
   text-align: center;
   margin-top: 12px;
   padding:6px;
-  font-size: 16px;
+  font-size: 14px;
   border: solid 2px #f52cf9;
   box-shadow: 0 0 2px #f52cf9;
   color: #f52cf9;
@@ -164,7 +159,6 @@ body {
 
 .mail-button {
   text-align: center;
-
   margin-top: 12px;
   padding:6px;
   font-size: 16px;
@@ -183,12 +177,12 @@ body {
   text-align: left;
   display: flex;
   flex-direction: column;
-  padding: 40px 250px;
+  padding: 40px
 }
 
 
 .aboutMe-Title {
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 16px;
   color: var(--primary);
 }
@@ -197,6 +191,7 @@ body {
   font-size: 18px;
 }
 
+
 .aboutMe-CV {
   align-items: baseline;
   display: flex;
@@ -204,96 +199,56 @@ body {
 }
 
 .aboutMe-CV span {
-  background: var(--primary);
-  color: #fff;
-  padding: 16px;
-  text-align: center;
-  border-radius: 16px;
+  padding:12px;
+  font-size: 16px;
+  border: solid 2px #f52cf9;
+  box-shadow: 0 0 2px #f52cf9;
+  color: #f52cf9;
+  border-radius: 12px;
+  cursor: pointer;
   margin-top: 24px;
+
+}
+.bi-file-earmark-arrow-down-fill{
+  color: var(--terciary);
 }
 
 .aboutMe-CV span:hover {
-  background: #f7fa68;
-  color: var(--primary);
-  box-shadow: 0 0 10px #f52cf9;
-}
-
-
-
-
-/* Styles for the tool container */
-.tool-section {
-  padding-top: 56px;
-  margin-top: 300px;
-  padding: 40px 80px 40px 80px;
-  height: 500px;
-}
-
-/* Styles for the tool section title */
-.tool-section h2 {
-  font-size: 24px;
-  text-align: center;
-  color: var(--secondary);
-  margin: 48px;
-}
-
-/* Styles for the tool images and border effect */
-
-
-.tools {
-  height: 100px;
-  padding-top: 56px;
-  margin: 48px;
-  justify-content: center;
-  align-items: center;
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  gap: 40px 24px;
-}
-
-.tools img {
-  background: #3e3c3c45;
-  padding: 8px;
-  width: 100px;
-  height: 100px;
-  border-radius: 12px;
-  object-fit: contain;
+  background: #f870fa;
+  color: var(--terciary);
+  box-shadow: 0 0 8px #f52cf9;
 }
 
 /* Styles for the projects section */
 .project-Section {
   width: auto;
   height: auto;
-  padding: 40px 200px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
  
 
 }
 .projects-Container {
-  padding: 24px 100px;
-  display: flex; /* Permite organizar proyectos en formato flex */
-  flex-direction: column; /* Mantener proyectos en una columna */
-  gap: 24px; /* Espacio entre proyectos */
+  display: flex; 
+  flex-direction: column;
+  gap: 40px; 
 }
 
 
 .project-Title {
 
     width: 100%;
-    padding-left: 80PX;
     text-align: left;
     color: #f52cf9; 
-    text-shadow: 0 0 8px #ffffff48; 
-    font-size: 32px;
+    font-size: 30px;
 
   }
 
   .project-Card {
-    display: flex; /* Utilizar flex para alinear elementos */
-    flex-direction: row; /* Alineación horizontal de elementos */
-    padding: 16px; /* Espaciado interno */
+    display: flex; 
+    flex-direction: column; 
+    padding: 16px; 
    
    
   }
@@ -304,10 +259,10 @@ body {
 
 }
 .project-Img img {
-  width: 350px; /* Ancho de la imagen del proyecto */
-  height: 300px; /* Alto de la imagen */
-  border-radius: 10px; /* Bordes redondeados */
-  margin-right: 24px; /* Espacio entre imagen y contenido */
+  width: 350px; 
+  height: 300px; 
+  border-radius: 10px; 
+  margin-right: 40px; 
 }
 
 
@@ -320,8 +275,8 @@ body {
   }
   .project-Content {
     display: flex;
-    flex-direction: column; /* Alineación vertical de contenido */
-    justify-content: flex-start; /* Alineación en la parte superior */
+    flex-direction: column;
+    justify-content: flex-start; /
   }
   /* Styles for the project description */
   .project-Name {
@@ -332,8 +287,9 @@ body {
 
 .project-Description{
   color: var(--terciary);
-  font-size: 20px;
-  margin-top: 20px;
+  font-size: 16px;
+  margin-top: 12px;
+  width: auto;
 }
 .links-Container {
   padding-top: 30px ;
@@ -347,7 +303,7 @@ body {
   text-align: center;
   text-decoration: none;
   margin-top: 16px;
-  padding:8px;
+  padding:8px 12px;
   font-size: 16px;
   border: solid 2px #f52cf9;
   box-shadow: 0 0 2px #f52cf9;
@@ -366,54 +322,474 @@ body {
   color: #fff;
 }
 
+
+/* Styles for the tool container */
+.tool-section {
+  width: auto;
+  height: auto;
+  padding: 24px 40px;
+
+}
+
+/* Styles for the tool section title */
+.tool-section h2 {
+  font-size: 30px;
+  text-align: center;
+  color: var(--primary);
+  margin: 24px;
+}
+
+/* Styles for the tool images and border effect */
+
+
+.tools {
+
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+  gap: 24px 20px;
+  padding: 24px 40px;
+}
+
+.tools p {
+  display: flex;
+  width: auto;
+  align-items: center;
+  padding: 12px;
+  padding: 8px;
+  font-size: 16px;
+  border: solid 2px #f52cf9;
+  box-shadow: 0 0 2px #f52cf9;
+  color: #f52cf9;
+  border-radius: 12px;
+}
+.tools img {
+
+  width: 24px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 12px;
+  margin-left: 10px;
+  object-fit: contain;
+}
+
 /* Styles for the WhatsApp chat button */
 #whatsapp-chat {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: var(--primary);
-  color: #fff;
-  padding: 10px 10px;
-  border-radius: 50px;
-  box-shadow: 0px 0px 8px rgba(163, 163, 163, 0.366);
   text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#whatsapp-chat img {
-  width: 40px;
-  display: block;
-  padding: 4px;
-  border-radius: 30%;
+.bi-whatsapp{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: var(--primary);
+  font-size: 32px;
+  background: var(--secondary);
+  padding: 14px 16px;
+  border-radius: 100px;
+  box-shadow: 0px 0px 8px rgba(163, 163, 163, 0.366);
 }
 
-#whatsapp-chat:hover {
-  background-color: #448904;
+.bi-whatsapp:hover {
+  background: var(--primary);
+  color: var(--secondary);
 }
 
 /* Styles for the footer */
 footer {
-  height: 100px;
+  height: 50px;
+  background: var(--primary);
+  width: auto;
+ text-align: center;
+ padding: 30px 80px;
+  
+}
+  .sign {
+    font-size: 12px;
+    color: rgba(240, 248, 255, 0.726);
+ 
 }
 
-.footer {
+.sign  {
+    cursor: pointer;
+    color: #ffff;
+}
+
+.sign span:hover {
+    color: yellow;
+}
+
+
+
+
+@media (min-width: 1025px) and (max-width: 1280px){
+  
+  .navBar-container {
+    padding: 40px 100px;
+  }
+
+/* Styles for the main container */
+.main-section {
+  width: auto;
+  height: auto;
   display: flex;
-  height: 90px;
-  justify-content: center;
-  align-items: end;
-  gap: 30px;
+  padding: 40px 200px;
+  justify-content: left;
+}
+.main-Container{
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-align: left;
+  color: var(--terciary);
+
+}
+  /* Styles for the main text */
+  .main-text{
+    width: auto;
+    margin-right: 20px; 
+    padding: 0px;
+    }
+  
+  
+  /* Styles for the main image container */
+  .main-img {
+    width: auto;
+   display: flex;
+   padding: 20px;
+
+  
+    
+  }
+  
+  .main-img img {
+    background-color: #1c1c1d;
+    border: solid #f52cf9;
+    box-shadow: 0 0 24px #f52cf9;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
+    object-fit: cover;
+  
+  }
+  
+    
+  .AboutMe-Section {
+    height: 300px;
+    width: auto;
+    color: white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 200px;
+  }
+  
+/* Styles for the projects section */
+.project-Section {
+  width: auto;
+  height: auto;
+  padding: 40px 200px;
+  display: flex;
+  flex-direction: column;
+
 }
 
-footer::before {
-  content: "";
-  position: absolute;
-  width: 900px;
-  height: 5%;
-  border-radius: 30%;
-  border: 30px solid var(--primary);
-  filter: blur(190px);
-  z-index: -1;
+.projects-Container {
+  display: flex; 
+  flex-direction: column;
+  gap: 40px; 
+}
+ 
+   
+  .project-Card {
+      display: flex; 
+      flex-direction: row; 
+      padding: 16px; 
+
+    }
+
+
+    .project-Content {
+      display: flex;
+      flex-direction: column; 
+      justify-content: flex-start; 
+   
+    }
+   /* Styles for the tool container */
+.tool-section {
+  width: auto;
+  height: auto;
+  padding: 40px 200px;
+
+}
+    footer {
+      height: 50px;
+      background: var(--primary);
+      }
+  
+
+  
+}
+@media (min-width: 769px) and (max-width: 1024px) { 
+.navBar-container {
+  padding: 40px 200px;
+
+}
+/* Styles for the main container */
+.main-section {
+width: auto;
+height: auto;
+display: flex;
+padding: 10px;
+margin: 0;
+
+}
+.main-Container{
+width: auto;
+height: auto;
+display: flex;
+flex-direction: row;
+
+text-align: left;
+color: var(--terciary);
+padding: 24px 200px;
+margin: 0;
+}
+/* Styles for the main text */
+
+.main-text{
+width: auto;
+margin-right: 20px; 
+padding: 0px;
 }
 
+
+/* Styles for the main image container */
+.main-img {
+
+width: auto;
+display: flex;
+padding: 20px;
+
+
+
+}
+
+.main-img img {
+background-color: #1c1c1d;
+border: solid #f52cf9;
+box-shadow: 0 0 24px #f52cf9;
+width: 150px;
+height: 150px;
+border-radius: 50%;
+
+object-fit: cover;
+
+}
+
+
+.AboutMe-Section {
+height: 300px;
+width: auto;
+color: white;
+text-align: left;
+display: flex;
+flex-direction: column;
+padding: 40px 200px;
+}
+
+/* Styles for the projects section */
+.project-Section {
+width: auto;
+height: auto;
+padding: 40px 80px;
+display: flex;
+flex-direction: column;
+
+
+}
+.projects-Container {
+display: flex; 
+flex-direction: column;
+gap: 40px; 
+}
+
+
+.project-Card {
+ display: flex; /* Utilizar flex para alinear elementos */
+ flex-direction: row; /* Alineación horizontal de elementos */
+ padding: 16px; /* Espaciado interno */
+
+
+}
+
+
+.project-Content {
+ display: flex;
+ flex-direction: column; /* Alineación vertical de contenido */
+ justify-content: flex-start; /* Alineación en la parte superior */
+
+}
+
+/* Styles for the tool container */
+.tool-section {
+  width: auto;
+  height: auto;
+  padding: 40px 200px;
+}
+
+}
+
+@media (min-width: 1280px) {
+
+.navBar-container {
+    padding: 24px 200px;
+  
+  }
+  
+  
+  /* Styles for the main container */
+.main-section {
+  width: auto;
+  height: auto;
+  display: flex;
+  padding: 10px;
+  margin: 0;
+  justify-content: left;
+  }
+
+  .main-Container{
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  color: var(--terciary);
+  padding: 24px 200px;
+  margin: 0;
+  }
+  /* Styles for the main text */
+  
+  .main-text{
+  width: auto;
+  padding: 0px;
+  }
+  
+  /* Styles for the main image container */
+  .main-img {
+  width: auto;
+  display: flex;
+  padding: 30px;
+  
+  
+  
+  }
+  
+  .main-img img {
+  background-color: #1c1c1d;
+  border: solid #f52cf9;
+  box-shadow: 0 0 24px #f52cf9;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+  
+  
+.AboutMe-Section {
+  height: 300px;
+  width: auto;
+  color: white;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 200px;
+  }
+  
+  /* Styles for the projects section */
+  .project-Section {
+  width: auto;
+  height: auto;
+  padding: 40px 200px;
+  display: flex;
+  flex-direction: column;
+  
+  
+  }
+
+  
+  .project-Card {
+   display: flex; /* Utilizar flex para alinear elementos */
+   flex-direction: row; /* Alineación horizontal de elementos */
+   padding: 16px; /* Espaciado interno */
+  
+  
+  }
+  
+  
+  .project-Content {
+   display: flex;
+   flex-direction: column; /* Alineación vertical de contenido */
+   justify-content: flex-start; /* Alineación en la parte superior */
+  
+  }
+  
+
+/* Styles for the tool container */
+.tool-section {
+  width: auto;
+  height: auto;
+  padding: 40px 200px;
+}
+
+/* Styles for the tool section title */
+.tool-section h2 {
+  font-size: 30px;
+  text-align: left;
+  color: var(--primary);
+  margin: 24px;
+}
+
+/* Styles for the tool images and border effect */
+
+
+.tools {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+  gap: 24px 20px;
+  padding: 0 0 80px 0 ;
+
+
+}
+
+.tools p {
+  display: flex;
+  width: auto;
+  align-items: center;
+  padding: 12px;
+  padding: 8px;
+  font-size: 16px;
+  border: solid 2px #f52cf9;
+  box-shadow: 0 0 2px #f52cf9;
+  color: #f52cf9;
+  border-radius: 12px;
+}
+.tools img {
+
+  width: 24px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 12px;
+  margin-left: 10px;
+  object-fit: contain;
+}
+
+
+}
