@@ -1,8 +1,8 @@
-# Landing Yeraldin Espinosa
+# Portfolio Yeraldin Espinosa
 
 ## Descripción del Proyecto
 
-Este proyecto consiste en la creación de una Landing Page personalizada llamada "My Portfolio". La página web está diseñada para mostrar información personal y profesional de Yeraldin Espinosa, un Frontend Developer y UI Designer. Proporciona detalles sobre sus habilidades, proyectos y cómo ponerse en contacto con ella a través de WhatsApp.
+Este proyecto consiste en la creación de página web diseñada para mostrar mi información personal y profesional.
 
 ## Tecnologías Utilizadas
 
