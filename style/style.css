@@ -313,7 +313,7 @@ body {
 
 .tool-section {
   max-width: 900px;
-  height: 400px;
+  height: auto;
   margin: 0 auto; 
   padding: 60px 0px;
 

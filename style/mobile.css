@@ -1,0 +1,130 @@
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .navbar-container,
+    .main-container  {
+        padding: 20px 40px;
+    }
+    #name {
+        font-size: 32px;
+    }
+    #text {
+        font-size: 16px;
+    }
+    .aboutme-section,
+    .project-section,
+    .tool-section {
+        padding: 40px 80px;
+    }
+    .project-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .projects-container {
+        gap: 60px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .bi-whatsapp {
+        font-size: 28px;
+        background: var(--secondary);
+        padding: 6px 12px;
+        border-radius: 150px;
+        box-shadow: 0px 0px 8px rgba(163, 163, 163, 0.366);
+    }
+    footer {
+        padding: 0;
+        width: auto;
+        height: auto;
+        border-radius: 0;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .navbar-container,
+    .main-container  {
+        padding: 0px 40px;
+    }
+    #name {
+        font-size: 32px;
+    }
+    #text {
+        font-size: 16px;
+    }
+    .aboutme-section,
+    .project-section,
+    .tool-section {
+        padding: 40px 80px;
+    }
+    .project-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .projects-container {
+        gap: 60px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .bi-whatsapp {
+        font-size: 28px;
+        background: var(--secondary);
+        padding: 6px 12px;
+        border-radius: 150px;
+        box-shadow: 0px 0px 8px rgba(163, 163, 163, 0.366);
+    }
+    footer {
+        padding: 0;
+        width: auto;
+        height: auto;
+        border-radius: 0;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 900px) {
+    .navbar-container,
+    .main-container  {
+        padding: 0px 40px;
+    }
+    #name {
+        font-size: 32px;
+    }
+    #text {
+        font-size: 16px;
+    }
+    .aboutme-section,
+    .project-section {
+        padding: 40px 80px;
+    }
+    .tool-section{
+        padding: 60px 80px;
+    }
+    .project-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .projects-container {
+        gap: 60px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .bi-whatsapp {
+        font-size: 28px;
+        background: var(--secondary);
+        padding: 6px 12px;
+        border-radius: 150px;
+        box-shadow: 0px 0px 8px rgba(163, 163, 163, 0.366);
+    }
+    footer {
+        margin-top: 40px ;
+        padding: 0;
+        width: auto;
+        height: auto;
+        border-radius: 0;
+    }
+}
