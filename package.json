@@ -1,7 +1,7 @@
 {
   "name": "yeralpage",
   "version": "1.0.0",
-  "description": "",
+  "description": "Este proyecto consiste en la creación de página web diseñada para mostrar mi información personal y profesional.",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
