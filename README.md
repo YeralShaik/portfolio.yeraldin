@@ -1,33 +1,33 @@
-# Portfolio Yeraldin Espinosa
+# Yeraldin Espinosa Portfolio
 
-## Descripción del Proyecto
+## Project Description
 
-Este proyecto consiste en la creación de página web diseñada para mostrar mi información personal y profesional.
+This project involves the creation of a website designed to showcase my personal and professional information.
 
-## Tecnologías Utilizadas
+## Technologies Used
 
-- **HTML:** La estructura de la página se ha creado utilizando HTML para garantizar una base sólida y accesible.
+- **HTML:** The structure of the page was built using HTML to ensure a solid and accessible foundation.
 
-- **CSS:** El diseño y la apariencia visual de la página se han mejorado con CSS para lograr un aspecto atractivo y coherente.
+- **CSS:** The design and visual appearance of the page were enhanced with CSS to achieve an attractive and coherent look.
 
-- **JavaScript:** Se ha utilizado JavaScript para implementar interacciones dinámicas en la página, como cambiar el idioma y abrir una ventana de WhatsApp al hacer clic en el botón de contacto.
+- **JavaScript:** JavaScript was used to implement dynamic interactions on the page, such as changing the language and opening a WhatsApp window when clicking the contact button.
 
-## Funcionalidades Clave
+## Key Features
 
-1. **Información Personal y Profesional:** La página muestra información personal y profesional sobre Yeraldin Espinosa, incluyendo su nombre, ocupación y una breve descripción.
+1. **Personal and Professional Information:** The page displays personal and professional information about Yeraldin Espinosa, including her name, occupation, and a brief description.
 
-2. **Cambiar Idioma:** Los visitantes pueden cambiar entre los idiomas inglés y español haciendo clic en el botón "Change Language".
+2. **Language Switch:** Visitors can switch between English and Spanish by clicking the "Change Language" button.
 
-3. **Habilidades y Herramientas:** Se presentan las habilidades y herramientas que Yeraldin utiliza en su trabajo, mostrando iconos representativos.
+3. **Skills and Tools:** The skills and tools that Yeraldin uses in her work are presented, with representative icons.
 
-4. **Proyectos Destacados:** Se destacan dos proyectos con imágenes y descripciones breves. Los visitantes pueden hacer clic en los enlaces para obtener más información sobre los proyectos.
+4. **Highlighted Projects:** Two projects are featured with images and brief descriptions. Visitors can click on the links to learn more about the projects.
 
-5. **Contacto a través de WhatsApp:** Al hacer clic en el botón de contacto en la parte superior de la página, se abre una ventana de WhatsApp con el número de teléfono y un mensaje predefinido, lo que facilita a los usuarios ponerse en contacto.
+5. **WhatsApp Contact:** By clicking the contact button at the top of the page, a WhatsApp window opens with the phone number and a predefined message, making it easy for users to get in touch.
 
-6. **Redes Sociales:** En el pie de página, se proporcionan enlaces a las redes sociales de Yeraldin, como LinkedIn e Instagram.
+6. **Social Media:** Links to Yeraldin's social media, such as LinkedIn and Instagram, are provided in the footer.
 
-## Autor
+## Author
 
-Este proyecto fue realizado por Yeraldin Espinosa.
+This project was created by Yeraldin Espinosa.
 
 ---
