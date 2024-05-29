@@ -194,12 +194,13 @@ body {
   padding-bottom: 16px;
 }
 
-.aboutme-cv {
+.aboutme-cv  {
   align-items: baseline;
   display: flex;
+
 }
 
-.aboutme-cv span {
+#cv-download {
   padding:12px;
   font-size: 16px;
   border: solid 2px #f52cf9;
@@ -209,12 +210,14 @@ body {
   cursor: pointer;
   margin-top: 24px;
 
+
 }
 .bi-file-earmark-arrow-down-fill{
   color: var(--terciary);
+  padding: 6px;
 }
 
-.aboutme-cv span:hover {
+#cv-download:hover {
   background: #f870fa;
   color: var(--terciary);
   box-shadow: 0 0 8px #f52cf9;
