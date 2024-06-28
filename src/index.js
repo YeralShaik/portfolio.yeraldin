@@ -10,11 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         projecttitle: 'Projects',
         description: 'Recipe page, created from scratch using Figma, HTML, and CSS.',
         tooltitle: 'Skills',
-        viewProjectlink: 'View project'
-
-
-        
-        
+        viewProjectlink: 'View project' 
 
     }
   
@@ -83,19 +79,20 @@ document.addEventListener('DOMContentLoaded', function () {
   })
   
   const projectsData = [
+ 
+    {
+        title: 'Shaik Asesores',
+        link: 'https://shaikasesores.com',
+        imgSrc: '../asset/screencapture-shaikasesores-2024-06-28-15_53_32.png',
+        description: 'Página para una empresa panameña dedicada a la asesoria de préstamos personales, creada desde cero con Figma, HTML, Tailwind, React.',
+        githubLink: 'https://github.com/YeralShaik/web-Shaik'
+    },
     {
         title: 'Cook Quick',
         link: 'https://yeralshaik.github.io/QuickCook/',
         imgSrc: './asset/screencapture-127-0-0-1-5500-2024-04-11-17_08_12.png',
         description: 'Página de recetas, creada desde cero con Figma, HTML, CSS Y Javascript.',
         githubLink: 'https://github.com/YeralShaik/QuickCook'
-    },
-    {
-        title: 'Web Shaik Asesores',
-        link: 'https://shaikasesores.com',
-        imgSrc: './asset/screencapture-shaikasesores-2024-04-24-15_55_38 (1).png',
-        description: 'Página para una empresa panameña dedicada a la asesoria de préstamos personales, creada desde cero con Figma, HTML, CSS, React.',
-        githubLink: 'https://github.com/YeralShaik/Shaik-Asesores'
     },
     {
         title: 'Web Store',
