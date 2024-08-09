@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const langDataEnglish = {
         changeLanguage: 'Spanish',
         name: '¡Hello! I\'m Yeraldin Espinosa',
-        ocupation: 'FrontEnd Developer',
+        ocupation: 'FrontEnd Developer | UX/UI',
         location: '📍Panamá, Panamá City',
         aboutme: 'About me',
         downloadCV: 'Download CV',
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const langDataSpanish = {
         
         name: '¡Hola! Soy Yeraldin Espinosa',
-        ocupation: 'Desarrolladora FrontEnd 💻',
+        ocupation: 'Desarrolladora FrontEnd | UX/UI 💻',
         location: '📍Panamá, Ciudad de Panamá',
         aboutme: 'Sobre mí',
         downloadCV: 'Descargar CV',
@@ -85,21 +85,21 @@ document.addEventListener('DOMContentLoaded', function () {
         link: 'https://shaikasesores.com',
         imgSrc: '../asset/screencapture-shaikasesores-2024-06-28-15_53_32.png',
         description: 'Página para una empresa panameña dedicada a la asesoria de préstamos personales, creada desde cero con Figma, HTML, Tailwind, React.',
-        githubLink: 'https://github.com/YeralShaik/web-Shaik'
+        githubLink: 'https://github.com/YeralTech/web-Shaikk'
     },
     {
         title: 'Cook Quick',
         link: 'https://yeralshaik.github.io/QuickCook/',
         imgSrc: './asset/screencapture-127-0-0-1-5500-2024-04-11-17_08_12.png',
         description: 'Página de recetas, creada desde cero con Figma, HTML, CSS Y Javascript.',
-        githubLink: 'https://github.com/YeralShaik/QuickCook'
+        githubLink: 'https://github.com/YeralTech/QuickCook'
     },
     {
         title: 'Web Store',
         link: 'https://yeralshaik.github.io/Store/',
         imgSrc: '/asset/screencapture-yeralshaik-github-io-Store-2024-06-03-20_48_55 (1).png',
         description: 'Api Store, creada desde cero con Figma, HTML, CSS y Javascript.',
-        githubLink: 'https://github.com/YeralShaik/Store'
+        githubLink: 'https://github.com/YeralTech/Store'
     }
   ]
   
