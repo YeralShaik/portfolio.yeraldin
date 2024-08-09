@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const message = 'Hola, estoy interesado en contactarte.'
     const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`
     const linkedinUrl = 'https://www.linkedin.com/in/yeraldinespinosa/'
-    const gitHubUrl = 'https://github.com/YeralShaik'
+    const gitHubUrl = 'https://github.com/YeralTech'
     const mailUrl = 'mailto:yeraldinshaik@gmailcom'
     
     document.getElementById('whatsapp-chat').addEventListener('click', function () {
